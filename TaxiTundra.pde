@@ -1,0 +1,69 @@
+import processing.sound.*;
+Scene[] screens;
+int currentScreenIndex, currentMapID;
+Table table;
+PFont font;
+float optionTextSize;
+SoundFile carSound;
+SoundFile menuBgSound;
+SoundFile menuOptionSound;
+SoundFile gameplayBgSound;
+SoundFile winSound;
+SoundFile lossSound;
+
+
+void setup(){ 
+  size(800,600);
+  //size(1280,720); //suported as well
+  //fullScreen(); //suported as well
+  optionTextSize = 32;
+  currentScreenIndex = 0;
+  currentMapID = 0;
+  table = loadTable("data\\data.csv", "header");
+  screens = new Scene[]{
+    new RequestFocusScene(),
+    new MenuScene(),
+    new MapSelectorScene(),
+    new MapEditorScene(),
+    new GameScene()
+  };
+  font = createFont("assets\\fonts\\Dongle-Bold.ttf", 32);
+  textFont(font);
+  carSound = new SoundFile(this, "assets\\audio\\tires_squal_loop.wav");
+  menuOptionSound = new SoundFile(this, "assets\\audio\\ui.wav");
+  gameplayBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Four.wav");
+  winSound = new SoundFile(this, "assets\\audio\\607207__fupicat__congrats.wav");
+  lossSound = new SoundFile(this, "assets\\audio\\371451__cabled_mess__lose_funny_retro_video-game.wav");
+  menuBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Two.wav");
+  menuBgSound.loop();
+}
+
+void draw(){
+  screens[currentScreenIndex].draw();
+  
+  //frame rate for testing
+  if (frameCount % 60 == 0) {
+    println(frameRate);
+  }
+    
+}
+
+void keyPressed(){
+  screens[currentScreenIndex].keyPressed();
+}
+
+void keyReleased(){
+  screens[currentScreenIndex].keyReleased();
+}
+
+void mouseMoved(){
+  screens[currentScreenIndex].mouseMoved();
+}
+
+void mouseClicked(){
+  screens[currentScreenIndex].mouseClicked();
+}
+
+void updateTableFile(){
+  saveTable(table, "data\\data.csv");
+}
