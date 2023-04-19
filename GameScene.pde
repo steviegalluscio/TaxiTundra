@@ -261,7 +261,7 @@ class GameScene extends Scene{
       currentScreenIndex = 1;
       init();
       if(gameplayBgSound.isPlaying()){ gameplayBgSound.stop(); }
-      if(!carSound.isPlaying()){ carSound.loop(); }
+      if(!carSound.isPlaying()){ carSound.stop(); }
       if(!menuBgSound.isPlaying()){ menuBgSound.loop(); }
       cursor(ARROW);
     }
