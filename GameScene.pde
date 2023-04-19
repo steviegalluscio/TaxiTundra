@@ -203,7 +203,7 @@ class GameScene extends Scene{
   
   void keyPressed() {
     if (key == CODED) {
-      if(firstKeyPressed){
+      if(firstKeyPressed && (keyCode == UP || keyCode == DOWN || keyCode == LEFT || keyCode == RIGHT)){
         menuBgSound.stop();
         gameplayBgSound.loop();
         firstKeyPressed = false;
