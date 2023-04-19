@@ -24,9 +24,9 @@ class MenuScene extends Scene{
   
   void selectOption(){
     if(selectorList.getSelectionIndex() == 0){
-      currentScreenIndex = 2; //level select
+      goToLevelSelect(); //level select
     } else if(selectorList.getSelectionIndex() == 1){
-      currentScreenIndex = 3; //create level
+      goToLevelEditor(); //create level
     } else if(selectorList.getSelectionIndex() == 2){
       exit();
     }    
@@ -96,8 +96,8 @@ class MenuScene extends Scene{
   
   void mouseClicked(){
     if(selectorList.isMouseOnAnOption()){ 
-      selectOption(); 
-      cursor(ARROW);  
+      selectOption();
+      cursor(ARROW);
     }
   }
   

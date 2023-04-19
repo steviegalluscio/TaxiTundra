@@ -249,6 +249,11 @@ class MapEditorScene extends Scene{
     } else if((key == ENTER || key == RETURN) && !enterPressed){
       enterPressed = true;
       selectOption();
+    } else if (key == ESC){
+      //supress exit
+      key = 0;
+      //go to main menu
+      goToMainMenu();
     }
     
     //Handles level name text input
@@ -295,9 +300,8 @@ class MapEditorScene extends Scene{
     }
     
     if(toMenuButton.isOnButton()){ 
-      currentScreenIndex = 1;
       init();
-      cursor(ARROW);
+      goToMainMenu();
     }
   }
   

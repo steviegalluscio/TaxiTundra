@@ -67,3 +67,23 @@ void mouseClicked(){
 void updateTableFile(){
   saveTable(table, "data\\data.csv");
 }
+
+void goToMainMenu(){
+  currentScreenIndex = 1;
+  cursor(ARROW);
+}
+
+void goToLevelSelect(){
+  currentScreenIndex = 2;
+  cursor(ARROW);
+}
+
+void goToLevelEditor(){
+  currentScreenIndex = 3;
+  cursor(ARROW);
+}
+
+void goToGameScene(){
+  currentScreenIndex = 4; 
+  cursor(ARROW);
+}

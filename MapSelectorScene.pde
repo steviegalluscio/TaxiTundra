@@ -24,7 +24,7 @@ class MapSelectorScene extends Scene{
   
   void selectOption(){    
     currentMapID = selectorList.getSelectionIndex();
-    currentScreenIndex = 4;   
+    goToGameScene();  
   }
   
   void draw(){
@@ -99,6 +99,11 @@ class MapSelectorScene extends Scene{
     } else if((key == ENTER || key == RETURN) && !enterPressed){
       enterPressed = true;
       selectOption();
+    } else if (key == ESC){
+      //supress exit
+      key = 0;
+      //go to main menu
+      goToMainMenu();
     }
   }
   
@@ -115,9 +120,9 @@ class MapSelectorScene extends Scene{
       selectOption();
       cursor(ARROW);
     }
+    
     if(toMenuButton.isOnButton()){ 
-      currentScreenIndex = 1;
-      cursor(ARROW);
+      goToMainMenu();
     }
   }
 }

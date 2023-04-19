@@ -43,11 +43,17 @@ class GameScene extends Scene{
       //Reset
       init();
       //Return to level select
-      currentScreenIndex = 2;
+      goToLevelSelect();
       //loop menu sound
       menuBgSound.loop();
-      cursor(ARROW);
     } 
+  }
+  
+  //Cleans up sounds, useful when returning to menu
+  void cleanUpSounds(){
+    if(gameplayBgSound.isPlaying()){ gameplayBgSound.stop(); }
+    if(!carSound.isPlaying()){ carSound.stop(); }
+    if(!menuBgSound.isPlaying()){ menuBgSound.loop(); }
   }
   
   void draw(){
@@ -238,6 +244,13 @@ class GameScene extends Scene{
     } else if(!play && (key == ENTER || key == RETURN) && !enterPressed){
         enterPressed = true;
         selectOption();
+    } else if (key == ESC){
+      //supress exit
+      key = 0;
+      //go to main menu
+      init();
+      cleanUpSounds();
+      goToMainMenu();
     }
   }
   
@@ -258,12 +271,9 @@ class GameScene extends Scene{
     }
     
     if(toMenuButton.isOnButton()){ 
-      currentScreenIndex = 1;
       init();
-      if(gameplayBgSound.isPlaying()){ gameplayBgSound.stop(); }
-      if(!carSound.isPlaying()){ carSound.stop(); }
-      if(!menuBgSound.isPlaying()){ menuBgSound.loop(); }
-      cursor(ARROW);
+      cleanUpSounds();
+      goToMainMenu();
     }
   }
   
