@@ -32,8 +32,8 @@ void setup(){
   carSound = new SoundFile(this, "assets\\audio\\tires_squal_loop.wav");
   menuOptionSound = new SoundFile(this, "assets\\audio\\ui.wav");
   gameplayBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Four.wav");
-  winSound = new SoundFile(this, "assets\\audio\\607207__fupicat__congrats.wav");
-  lossSound = new SoundFile(this, "assets\\audio\\371451__cabled_mess__lose_funny_retro_video-game.wav");
+  winSound = new SoundFile(this, "assets\\audio\\fupicat__congrats.wav");
+  lossSound = new SoundFile(this, "assets\\audio\\cabled_mess__lose_funny_retro_video-game.wav");
   menuBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Two.wav");
   menuBgSound.loop();
 }
