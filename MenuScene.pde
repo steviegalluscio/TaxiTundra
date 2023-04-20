@@ -9,7 +9,7 @@ class MenuScene extends Scene{
     "Quit"
   };
   float titleTextSize = 96;
-  float menuOptionTextSize = 32;
+  float optionTextSize = 32;
   float titleWidth;
   PImage taxiLogo;
   int taxiLogoAnimationFrame = 0;
@@ -19,7 +19,7 @@ class MenuScene extends Scene{
   MenuScene(){
     textSize(titleTextSize);
     titleWidth = textWidth(title)*0.75;
-    selectorList = new SelectorList(menuOptions, (height/2)+32, ((width-titleWidth)/2)+10, menuOptionTextSize);
+    selectorList = new SelectorList(menuOptions, (height/2)+32, ((width-titleWidth)/2)+10, optionTextSize);
   }
   
   void selectOption(){
@@ -48,7 +48,7 @@ class MenuScene extends Scene{
     fill(255);
     //draw title text infront of stroke
     text(title, width/2, height/2);
-    textSize(menuOptionTextSize);
+    textSize(optionTextSize);
     
     //display logo spinning
     imageMode(CENTER);

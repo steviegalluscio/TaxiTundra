@@ -2,7 +2,6 @@ class MapSelectorScene extends Scene{
   
   //Variables
   float margins;
-  int optionTextSize;
   SelectorList selectorList;
   ToMenuButton toMenuButton;
   int localRowCount;
@@ -10,7 +9,6 @@ class MapSelectorScene extends Scene{
   //Constructor
   MapSelectorScene(){
     margins = 100;
-    optionTextSize = 32;
     toMenuButton = new ToMenuButton();
     init();
   }

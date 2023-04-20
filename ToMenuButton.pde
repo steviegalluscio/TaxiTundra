@@ -9,9 +9,9 @@ class ToMenuButton{
   //Constructor
   ToMenuButton(){
     showToMenuButton = true;
-    textSize(16);
+    textSize(optionTextSize/2);
     keyWidth = textWidth(btnKey)*0.75;
-    textSize(32);
+    textSize(optionTextSize);
     textWidth = textWidth(btnText)*0.75;
   }
   

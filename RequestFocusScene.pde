@@ -12,7 +12,7 @@ class RequestFocusScene extends Scene{
   
   void mouseClicked(){
     //move to menu
-    currentScreenIndex = 1;
+    goToMainMenu();
   }
   
   void keyPressed(){}
