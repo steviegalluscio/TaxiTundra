@@ -52,7 +52,7 @@ class MenuScene extends Scene{
     
     //display logo spinning
     imageMode(CENTER);
-    taxiLogo = loadImage("assets\\carYellow\\carYellow_"+ String.format("%04d", taxiLogoAnimationFrame) +".png");
+    taxiLogo = loadImage("data\\assets\\carYellow\\carYellow_"+ String.format("%04d", taxiLogoAnimationFrame) +".png");
     //update logo animation frame number
     if(frameCount%10 == 0){ taxiLogoAnimationFrame = taxiLogoAnimationFrame < 11 ? taxiLogoAnimationFrame + 1 : 0; }
     image(taxiLogo,width/2,(height/2)-textAscent()*5);

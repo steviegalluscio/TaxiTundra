@@ -27,14 +27,14 @@ void setup(){
     new MapEditorScene(),
     new GameScene()
   };
-  font = createFont("assets\\fonts\\Dongle-Bold.ttf", 32);
+  font = createFont("data\\assets\\fonts\\Dongle-Bold.ttf", 32);
   textFont(font);
-  carSound = new SoundFile(this, "assets\\audio\\tires_squal_loop.wav");
-  menuOptionSound = new SoundFile(this, "assets\\audio\\ui.wav");
-  gameplayBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Four.wav");
-  winSound = new SoundFile(this, "assets\\audio\\fupicat__congrats.wav");
-  lossSound = new SoundFile(this, "assets\\audio\\cabled_mess__lose_funny_retro_video-game.wav");
-  menuBgSound = new SoundFile(this, "assets\\audio\\Ludum-Dare-38-Track-Two.wav");
+  carSound = new SoundFile(this, "data\\assets\\audio\\tires_squal_loop.wav");
+  menuOptionSound = new SoundFile(this, "data\\assets\\audio\\ui.wav");
+  gameplayBgSound = new SoundFile(this, "data\\assets\\audio\\Ludum-Dare-38-Track-Four.wav");
+  winSound = new SoundFile(this, "data\\assets\\audio\\fupicat__congrats.wav");
+  lossSound = new SoundFile(this, "data\\assets\\audio\\cabled_mess__lose_funny_retro_video-game.wav");
+  menuBgSound = new SoundFile(this, "data\\assets\\audio\\Ludum-Dare-38-Track-Two.wav");
   menuBgSound.loop();
 }
 

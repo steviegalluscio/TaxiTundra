@@ -10,7 +10,7 @@ class Car{
   
   //Constructor
   Car(float intialY){
-    carSprite = loadImage("assets\\carYellow\\carYellow_0005.png");
+    carSprite = loadImage("data\\assets\\carYellow\\carYellow_0005.png");
     carX = width/2;
     carY = intialY;
     vx = 0;
@@ -49,7 +49,7 @@ class Car{
       vy -= carSpeedIso;
       vx += carSpeed;
     }
-    carSprite = loadImage("assets\\carYellow\\carYellow_0005.png");
+    carSprite = loadImage("data\\assets\\carYellow\\carYellow_0005.png");
   }
   
   void moveDown(){
@@ -57,7 +57,7 @@ class Car{
       vy += carSpeedIso;
       vx -= carSpeed;
     }
-    carSprite = loadImage("assets\\carYellow\\carYellow_0011.png");
+    carSprite = loadImage("data\\assets\\carYellow\\carYellow_0011.png");
   }
   
   void moveLeft(){
@@ -65,7 +65,7 @@ class Car{
       vx-= carSpeed;
       vy-= carSpeedIso;
     }
-    carSprite = loadImage("assets\\carYellow\\carYellow_0007.png");
+    carSprite = loadImage("data\\assets\\carYellow\\carYellow_0007.png");
   }
   
   void moveRight(){   
@@ -73,7 +73,7 @@ class Car{
       vx+= carSpeed;
       vy+= carSpeedIso;
     }
-    carSprite = loadImage("assets\\carYellow\\carYellow_0001.png");
+    carSprite = loadImage("data\\assets\\carYellow\\carYellow_0001.png");
   }
   
   //Stops car from moving and displays in place, used for win

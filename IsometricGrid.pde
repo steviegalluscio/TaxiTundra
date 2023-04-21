@@ -10,8 +10,8 @@ class IsometricGrid{
   //Constructor
   IsometricGrid(String gstr){
     //println("gstr"+gstr);
-    ice = loadImage("assets\\tiles\\voxelTile_07_small_fix.png");
-    goal = loadImage("assets\\tiles\\abstractTile_10_small.png");
+    ice = loadImage("data\\assets\\tiles\\voxelTile_07_small_fix.png");
+    goal = loadImage("data\\assets\\tiles\\abstractTile_10_small.png");
     imageMode(CENTER);
     grid = new int[9][9];
     for(int i = 0; i < 81; i++){
