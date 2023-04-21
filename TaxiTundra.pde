@@ -40,12 +40,12 @@ void setup(){
 
 void draw(){
   screens[currentScreenIndex].draw();
-  
+  /*
   //frame rate for testing
   if (frameCount % 60 == 0) {
     println(frameRate);
   }
-    
+  */
 }
 
 void keyPressed(){

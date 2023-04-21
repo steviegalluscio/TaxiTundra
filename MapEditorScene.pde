@@ -266,9 +266,6 @@ class MapEditorScene extends Scene{
         if(len > 0){
           userInput = userInput.substring(0, len-1);
         }
-        println("backspace");
-      } else {
-        println("notchar:"+key);
       }
     }
   }

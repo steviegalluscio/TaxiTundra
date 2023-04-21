@@ -59,7 +59,7 @@ class GameScene extends Scene{
   void draw(){
     //check if GameScene must be reinitialized
     if(currentMapID != localMapID){ 
-      println("reinit");
+      //println("reinit");
       init(); 
     }
     

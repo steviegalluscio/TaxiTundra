@@ -28,7 +28,7 @@ class MapSelectorScene extends Scene{
   void draw(){
     //check if MapSelectorScene must be reinitialized
     if(table.getRowCount() != localRowCount){ 
-      println("reinit");
+      //println("reinit");
       init(); 
     }
     

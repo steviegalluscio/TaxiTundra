@@ -9,7 +9,7 @@ class IsometricGrid{
   
   //Constructor
   IsometricGrid(String gstr){
-    println("gstr"+gstr);
+    //println("gstr"+gstr);
     ice = loadImage("assets\\tiles\\voxelTile_07_small_fix.png");
     goal = loadImage("assets\\tiles\\abstractTile_10_small.png");
     imageMode(CENTER);
