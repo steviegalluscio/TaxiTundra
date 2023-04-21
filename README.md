@@ -9,12 +9,15 @@ Isometric 2.5D challenge game with a taxi sliding on ice written in Processing p
 
 Taxi Tundra is a speed-based challenge game where you drive a taxi across levels made of blocks of ice and try to arrive at the goal block as fast as possible without sliding off the map. Each level has a record time that you can try to beat or you can create your own new levels in the level editor!
 
+## Installation
+For Windows, download the `TaxiTundra-windows-amd64.zip` file from [Releases](https://github.com/steviegalluscio/TaxiTundra/releases/latest), then extract it and run `TaxiTundra.exe`. For all other platforms download the Processing IDE and open the `TaxiTundra.pde` in the source with Processing and click on the run button. ***Note:*** this option requires Processing sound library.
+
 ## Game Description
 ### Objective
 Drive the taxi from the starting ice block to the grey goal block as fast as possible without sliding too much and falling off the map. 
 ### Gameplay
 
-***To play Taxi Tundra,***  open the TaxiTundra.pde file with Processing and click on the run button. You will then be greeted by a blinking “Click to begin” message, click on it and you will see the title screen. ***Note:*** requires Processing sound library.
+***At the start of Taxi Tundra,*** You will then be greeted by a blinking “Click to begin” message, click on it and you will see the title screen.
 
 <img src="https://user-images.githubusercontent.com/20542782/233503317-5f33aba4-a686-4861-ac68-65304530fd85.png" width="200">
 
