@@ -14,7 +14,7 @@ Taxi Tundra is a speed-based challenge game where you drive a taxi across levels
 Drive the taxi from the starting ice block to the grey goal block as fast as possible without sliding too much and falling off the map. 
 ### Gameplay
 
-***To play Taxi Tundra,***  open the TaxiTundra.pde file with Processing and click on the run button. You will then be greeted by a blinking “Click to begin” message, click on it and you will see the title screen.
+***To play Taxi Tundra,***  open the TaxiTundra.pde file with Processing and click on the run button. You will then be greeted by a blinking “Click to begin” message, click on it and you will see the title screen. ***Note:*** requires Processing sound library.
 
 <img src="https://user-images.githubusercontent.com/20542782/233503317-5f33aba4-a686-4861-ac68-65304530fd85.png" width="200">
 
